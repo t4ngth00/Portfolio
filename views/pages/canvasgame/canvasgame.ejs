@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Game</title>
+    <!-- Semantic UI CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
+    <style type="text/css">
+      #container { position: relative; }
+      #canvasGameFrame { border: 1px solid #000; }
+      .score_color { color: #16ac5c }
+      .time_color { color: red }
+    </style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="ui top green attached labeled icon menu">
+      <div class="header item">
+        <h1 class="ui green header ">Thanh Nhan Nguyen</h1>
+      </div>
+      <a class="item" href="/">
+        <i class="home icon"></i>
+        Home
+      </a>
+      <a class="item" href="/labs">
+        <i class="lab icon"></i>
+        Labs
+      </a>
+      <a class="item active" href="/apps">
+        <i class="block layout icon"></i>
+        Apps
+      </a>
+      <a class="item" href="/contact">
+        <i class="user icon"></i>
+        About me
+      </a>
+    </div>
+    <!-- end navigation bar -->
+
+    <div class="ui container segment basic">
+      <h1 class="ui huge center aligned header green">Click on the box below to start the game</h1>
+      <div class="ui segment">
+        <h3>Score: <span class="score_color" id="score">0</span></h3>
+        <div id="container">
+          <canvas id="canvasGameFrame" width="1070" height="500" ></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/pages/canvasgame/canvasgame.js"></script>
+</html>

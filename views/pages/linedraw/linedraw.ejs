@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Line Draw</title>
+    <!-- Semantic UI CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
+    <style type="text/css">
+      #container { position: relative; }
+      #canvasElementPermanent { border: 1px solid #000; }
+      #canvasElementTemp { position: absolute; top: 1px; left: 1px; }
+    </style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="ui top green attached labeled icon menu">
+      <div class="header item">
+        <h1 class="ui green header ">Thanh Nhan Nguyen</h1>
+      </div>
+      <a class="item" href="/">
+        <i class="home icon"></i>
+        Home
+      </a>
+      <a class="item" href="/labs">
+        <i class="lab icon"></i>
+        Labs
+      </a>
+      <a class="item active" href="/apps">
+        <i class="block layout icon"></i>
+        Apps
+      </a>
+      <a class="item" href="/contact">
+        <i class="user icon"></i>
+        About me
+      </a>
+    </div>
+    <!-- end navigation bar -->
+    <div class="ui container segment basic">
+      <h1 class="ui huge center aligned header green">Draw in this area below</h1>
+      <div class="ui segment">
+        <div id="container">
+          <!-- Permanent canvas element -->
+          <canvas id="canvasElementPermanent" width="1070" height="500" ></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/pages/linedraw/script.js"></script>
+</html>

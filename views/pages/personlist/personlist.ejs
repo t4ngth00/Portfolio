@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <!-- Semantic UI CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
+    <link rel="stylesheet" href="/pages/personlist/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="ui top green attached labeled icon menu">
+      <div class="header item">
+        <h1 class="ui green header ">Thanh Nhan Nguyen</h1>
+      </div>
+      <a class="item" href="/">
+        <i class="home icon"></i>
+        Home
+      </a>
+      <a class="item" href="/labs">
+        <i class="lab icon"></i>
+        Labs
+      </a>
+      <a class="item active" href="/apps">
+        <i class="block layout icon"></i>
+        Apps
+      </a>
+      <a class="item" href="/contact">
+        <i class="user icon"></i>
+        About me
+      </a>
+    </div>
+    <!-- end navigation bar -->
+    <div class="ui container basic segment">
+      <form>
+        <input id="input" type="text" placeholder="Type a name here" required class="input"/><br>
+        <div class="btngroup">
+          <input id="btn" type="button" value="Add person" class="btn"></input>
+          <input id="btn2" type="button" value="Clear all person" class="btn2"></input>
+          <br>
+        </div>
+      </form>
+      <div class="resultBox" id="resultBox"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="/pages/personlist/script.js"></script>
+</html>

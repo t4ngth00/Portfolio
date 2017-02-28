@@ -33,9 +33,22 @@ app.get('/contact', function(req, res) {
   res.render('pages/contact');
 });
 
-app.get('/lab1', function (req, res) {
-  res.render('pages/alllabs/lab1');
-})
+// for running applications
+app.get('/apps/personlist', function (req, res) {
+  res.render('pages/personlist/personlist');
+});
+
+app.get('/apps/linedraw', function (req, res) {
+  res.render('pages/linedraw/linedraw');
+});
+
+app.get('/apps/canvasgame', function (req, res) {
+  res.render('pages/canvasgame/canvasgame');
+});
+
+app.get('/apps/photogallery', function (req, res) {
+  res.render('pages/photogallery/FlickrPhotoWall');
+});
 
 // launch ======================================================================
 app.listen(app.get('port'), function(){
