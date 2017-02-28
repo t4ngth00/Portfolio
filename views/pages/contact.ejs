@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../includes/HeaderLibraries.ejs %>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="ui top green attached labeled icon menu">
+      <div class="header item">
+        <h1 class="ui green header ">Thanh Nhan Nguyen</h1>
+      </div>
+      <a class="item" href="/">
+        <i class="home icon"></i>
+        Home
+      </a>
+      <a class="item" href="/labs">
+        <i class="lab icon"></i>
+        Labs
+      </a>
+      <a class="item" href="/apps">
+        <i class="block layout icon"></i>
+        Apps
+      </a>
+      <a class="item active">
+        <i class="user icon"></i>
+        About me
+      </a>
+    </div>
+    <!-- end navigation bar -->
+
+    <!-- begin body part -->
+    <div class="ui container center aligned basic segment">
+      <h1 class="ui huge header green">MY INFORMATION</h1>
+    </div>
+    <!-- end body part -->
+    <% include ../includes/BodyEndLibraries.ejs %>
+    <!-- custom JS-->
+    <script>
+      $('.menu .item').tab();
+    </script>
+  </body>
+</html>

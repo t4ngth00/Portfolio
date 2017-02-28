@@ -1,0 +1,15 @@
+{
+  "name": "Portfolio-t4ngth00",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "cors": "*"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
